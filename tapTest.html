@@ -1,0 +1,17 @@
+<head>
+  <title>tapTest</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  <p>{{greeting}}</p>
+  <p>clicks: {{clicks}}</p>
+  <p>clicks w/ default prevented: {{clicksDP}}</p>
+  <p> Go to google:  <a id="noDP" href="http://www.google.com">www.google.com</a></p>
+
+  <p> Catch click only:  <a id="dp" href="http://www.google.com">www.google.com</a></p>
+</template>
